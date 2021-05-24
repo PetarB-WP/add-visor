@@ -1,3 +1,44 @@
-body{
-    background-color: brown;
+
+*{
+    box-sizing: border-box;
 }
+
+body{
+    background-color: #736363;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.logo{
+    background-image: url(../imgs/logo_transparent_background.png);
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}   
+.menu-line{
+    border: 1px solid green;
+}
+
+@media only screen and (min-width: 601px) {
+    .logo{
+        width: 20%;
+    }
+    .menu-line{
+        width: 80%;
+    }
+    .flex-container {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-top: 100px;
+    }
+  }
