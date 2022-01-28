@@ -1,0 +1,110 @@
+//------------------------
+// Categories
+//------------------------
+.categories-frame{
+	width: 100%;
+	background-color: rgba(24,7,30, 0.6); // 333333;
+	padding: 16px;
+	position: relative;
+	z-index: 10;
+}
+
+.cat-row-1{
+	padding: 16px;
+	margin-top: 48px;
+	display: flex;
+	
+	.cat-col-1{
+		padding: 16px;
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		color: white;
+		perspective: 100px;
+		
+		h2{
+			color: $logo-color;
+			border-bottom: 3px solid $logo-color;
+			margin: 0;
+			opacity: 0;
+			transform: rotateY(20deg) translateX(-100px);
+		}
+		.cat-content{
+			padding: 16px;
+			margin-top: 32px;
+			text-align: center;
+			font-family: Lucida Console, sans-serif;
+			font-size: 18px;
+			opacity: 0;
+			transform: rotateY(-9deg) translateX(60px);
+		}
+	}
+	
+	.cat-col-2{
+		padding: 16px;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		
+		& > div.section{
+			padding: 16px;
+			font-size: 24px;
+			display: flex;
+			
+			&:after{
+				content: "";
+				display: table;
+				clear: both;
+			}		
+			.sec-number{
+				border: 3px solid $logo-color;
+				border-radius: 25px;
+				font-size: 64px;
+				color: $logo-color-red;
+				position: relative;
+				width: 25%;
+				float: left;				
+				opacity: 0;
+				transform: translateX(50%);
+				span{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					opacity: 0;
+				}
+				&:after{
+					content: "";
+					display: block;
+					padding-bottom: 100%;				
+				}
+			}			
+			.content{
+				color: white;
+				width: 75%;
+				float: left;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding-left: 48px;
+				opacity: 0;
+				transform: translateX(30%);				
+				h5{
+					color: $logo-color;
+					font-weight: bold;
+				}
+				.cont-text{
+					font-size: 14px;
+					font-family: Lucida Console, sans-serif;
+				}
+			}
+		}
+	}
+}
+
+.trans-rot-0{
+	transform: rotateY(0deg) translateX(0) !important;
+	opacity: 1 !important;
+}

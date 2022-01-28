@@ -1,0 +1,180 @@
+/*------ background circles -----*/
+.c-frame{
+	margin: 0;
+    padding: 0;
+    position: relative;
+}
+.cf{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	.circle-cover{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 4;
+		background-color: rgb(122,122,122, 0.7);
+		left: 0;
+		top: 0;
+	}
+}
+.circle-frame{
+	position: relative;
+	width: 100%;
+	z-index: 3;
+	left: 0;
+	top: 0;	
+	// background-color: #eb9a13;
+	&:after{
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+	}
+}
+.circle{
+	position: absolute;
+	border-radius: 50%;
+	transform: skewX(8deg);
+}
+.circle-1{		
+	width: 15%;
+	height: 15%;
+	background-color: darken($basic_c1, 30%);
+	left: -7%;
+	z-index: 3;		
+}
+.circle-2{
+	width: 18%;
+	height: 18%;
+	background-color: darken($basic_c1, 40%);
+	left: -7%;
+	z-index: 2;
+}
+.circle-3{
+	width: 21%;
+	height: 21%;
+	background-color: darken($basic_c1, 50%);
+	left: -7%;
+	z-index: 1;
+}	
+.circle-4{		
+	width: 19%;
+	height: 19%;
+	background-color: darken($basic_c1, 30%);
+	left: 19%;
+	top: 19%;
+	z-index: 3;		
+}
+.circle-5{		
+	width: 22%;
+	height: 22%;
+	background-color: darken($basic_c1, 40%);
+	left: 19%;
+	top: 19%;
+	z-index: 2;		
+}
+.circle-6{		
+	width: 26%;
+	height: 26%;
+	background-color: darken($basic_c1, 50%);
+	left: 19%;
+	top: 19%;
+	z-index: 1;		
+}	
+.circle-7{		
+	width: 30%;
+	height: 30%;
+	background-color: color.adjust(#6b717f, $red: 130);
+	right: 0;
+	top: 4%;
+	z-index: 3;		
+}
+.circle-8{		
+	width: 33%;
+	height: 33%;
+	background-color: darken($basic_c1, 30%);
+	right: 0;
+	top: 4%;
+	z-index: 2;		
+}
+.circle-9{		
+	width: 37%;
+	height: 37%;
+	background-color: color.adjust(#6b717f, $red: 100);
+	right: 0;
+	top: 4%;
+	z-index: 1;		
+}
+.circle-10{		
+	width: 37%;
+	height: 37%;
+	background-color: color.adjust(#6b717f, $red: 130);
+	left: 0;
+	bottom: 4%;
+	z-index: 1;		
+}
+.circle-11{		
+	width: 33%;
+	height: 33%;
+	background-color: darken($basic_c1, 30%);
+	left: 0;
+	bottom: 4%;
+	z-index: 2;		
+}
+.circle-12{		
+	width: 30%;
+	height: 30%;
+	background-color: color.adjust(#6b717f, $red: 100);
+	left: 0;
+	bottom: 4%;
+	z-index: 3;		
+}
+.circle-13{		
+	width: 19%;
+	height: 19%;
+	background-color: darken($basic_c1, 30%);
+	left: 60%;
+	bottom: 29%;
+	z-index: 3;		
+}
+.circle-14{		
+	width: 22%;
+	height: 22%;
+	background-color: darken($basic_c1, 40%);
+	left: 60%;
+	bottom: 29%;
+	z-index: 2;		
+}
+.circle-15{		
+	width: 26%;
+	height: 26%;
+	background-color: darken($basic_c1, 50%);
+	left: 60%;
+	bottom: 29%;
+	z-index: 1;		
+}
+.circle-16{		
+	width: 15%;
+	height: 15%;
+	background-color: darken($basic_c1, 30%);
+	right: -7%;
+	bottom: 0;
+	z-index: 3;		
+}
+.circle-17{
+	width: 18%;
+	height: 18%;
+	background-color: darken($basic_c1, 40%);
+	right: -7%;
+	bottom: 0;
+	z-index: 2;
+}
+.circle-18{
+	width: 21%;
+	height: 21%;
+	background-color: darken($basic_c1, 50%);
+	right: -7%;
+	bottom: 0;
+	z-index: 1;
+}

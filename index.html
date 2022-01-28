@@ -1,20 +1,972 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><!-- disable-scroll -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADD VISOR</title>
-
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="css/main.css">
+	
+	<!--<link rel="stylesheet" href="fontawesome-free-5.15.3/css/all.css">-->
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
-    <div class="flex-container">
-        <div class="logo">
-            <!-- <img src="imgs/logo_transparent_background.png"> --> 
+<body><!-- disable-scroll -->
+		<div id="initInfo" class="frame-ii trans-1 trans-drt-1000">
+			<div class="content-ii">
+				<span class="close-ii trans-1 trans-drt-300" onclick="initInfo()">X</span>
+				<h5>This is the template site, created all from scratch</h5>
+				<h5>Used tools</h5>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Vanilla JavaScript</li>
+					<li>CSS animation and transition</li>
+					<li>Dinamic generate circles-background with javaScript</li>
+				</ul>
+				<p>Tested only in <span class="marked">Chrome</span></p>
+				<p>Behaves well on devices max width 600px and large desktop</p>
+				<p>Close window click on <span class="marked">X</span></p>
+			</div>
+		</div>
+        <!-- Before navigation bar -->
+        <div class="before-nav-bar">
+            <div class="frame-row-1">
+				<div class="w3-text-white">
+				<span>tel:</span> +38100/000-0000 | <span>email:</span> addvisio@vision.com</div>
+			</div>
+			<div class="frame-row-2">
+				<!-- logo -->
+				<div class="logo-frame">
+					<div class="logo"></div>				
+				</div>
+				
+				<!-- Social connection -->
+				<div class="social-frame">
+					<div class="row row-1 w3-text-white">
+						Connect with US
+					</div>
+					<div class="row row-2">
+						<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none trans-1 trans-drt-200"><i class="fab fa-facebook"></i></a>
+						<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none trans-1 trans-drt-200"><i class="fab fa-youtube"></i></a>
+						<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none trans-1 trans-drt-200"><i class="fab fa-twitter"></i></a>
+					</div>				
+					<div class="row row-3">
+						<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none trans-1 trans-drt-200"><i class="fa fa-shopping-cart"></i></a>
+						<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none trans-1 trans-drt-200"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+						<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none trans-1 trans-drt-200"><i class="fa fa-fw fa-user"></i> Login</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+        <!--  Open-Close SideBar -->
+		<div class="sidebar-trigger">
+			<div class="menu-button" onclick="openNav()">
+				<i class="fa fa-bars"></i>
+				<span>MENU</span> 
+			</div>
+			<!--<i class="fa fa-window-close"></i>-->
+		</div>
+		<!-- Navigation bar -->
+		<div class="nav-bar-frame w3-container" id="navBarFrame">
+			<div class="nav-bar w3-bar" id="navBar">
+				<a href="javascript:void(0)" class="close-button" onclick="openNav()">&times;<hr></a>
+				<a href="#ourVision" class="w3-bar-item active-element-sidebar">Our Vision<hr class=" active-element"></a>
+				<a href="#ourVisionRow2" class="w3-bar-item">Research<hr></a>
+				<a href="#product" class="w3-bar-item">Product<hr></a>
+				<a href="#categories" class="w3-bar-item">Categories<hr></a>
+				<a href="#contact" class="w3-bar-item">Contact<hr></a>
+			</div>
         </div>
-        <div class="menu-line"></div>
-    </div>
-    
+		<div id="cFrame" class="c-frame">		
+			<!-- After Navigation Bar - Content -->
+			<div id="ourVision" class="ourVision-frame">
+				<div class="ourVision-row-1">
+					<!-- <div class="opacity-ourVision"></div> -->
+					<div class="line-1 animation-zoom animation-duration-1400"><h1>Add Vision Company<hr></h1></div>
+					<div class="line-2" id="row1Line2">
+						<div class="column-ourVision column-1 trans-1 trans-drt-400">
+							<div class="row-1">
+								<i class="fas fa-user-graduate trans-1 trans-drt-1400"></i>
+								<i class="fas fa-chevron-right trans-1 trans-drt-1400 trans-delay-400"></i>
+								<i class="fas fa-laptop-code trans-1 trans-drt-1400 trans-delay-800"></i>
+							</div>
+							<div class="row-2 trans-1 trans-drt-600 trans-delay-1000">
+								<h4><strong>Fusce mattis</strong></h4>
+								Sed turpis elit, blandit a bibendum a, pulvinar posuere leo. 
+								Fusce mattis arcu non sem hendrerit.
+							</div>
+						</div>
+						
+						<div class="column-ourVision column-2">
+							<i class="fas fa-angle-double-right animation-duration-600 animation-delay-1200"></i>
+						</div>
+						
+						<div class="column-ourVision column-3 trans-1 trans-drt-400 trans-delay-400">
+							<div class="text-3 trans-1 trans-drt-600 trans-delay-1600">
+								<h3><strong>Sed turpis elit</strong></h3>
+								Sed turpis elit, blandit a bibendum a, pulvinar posuere leo. Fusce mattis arcu non sem hendrerit.
+							</div>
+							<i class="fas fa-check trans-1 animation-duration-600 animation-delay-2000"></i>
+						</div>
+					</div>
+				</div>
+				<div id="ourVisionRow2" class="ourVision-row-2">
+					<div class="line-1 animation-duration-1400"><h1>Research Investments<hr></h1></div>
+					<div class="line-2">
+						<div id="line2Col1" class="col-1">
+							<div class="picture-frame">					
+								<div class="picture animation-duration-1200 animation-delay-1000"></div>
+								<div class="p-anm p-anm-1 trans-1 trans-drt-2000 trans-delay-800"></div>
+								<div class="p-anm p-anm-2 trans-1 trans-drt-2000 trans-delay-800"></div>
+								<div class="p-anm p-anm-3 trans-1 trans-drt-2000 trans-delay-800"></div>
+								<div class="p-anm p-anm-4 trans-1 trans-drt-2000 trans-delay-800"></div>
+							</div>						
+							<div class="after-picture" style="display: none;">Sed turpis elit, blandit a bibendum a, pulvinar posuere leo. 
+								Fusce mattis arcu non sem hendrerit.<div class="triangle-LB"></div><div class="triangle-RT"></div>
+							</div>
+						</div>
+						
+						<!-- Traingle Animation -->
+						<div id="line2Col2" class="col-2">
+							<div class="animation trans-1 trans-drt-1000 trans-delay-800">
+								<div id="squareCog" class="square-cog">					
+									<div class="circle-cog"> <!-- anm-rot-1 -->
+										<div id="triangleCog" class="triangle-cog">
+										</div>
+										<i class="fas fa-cog"></i><!-- anm-rot -->
+										<i class="fas fa-cog"></i><!-- anm-rot -->
+										<i class="fas fa-cog"></i><!-- anm-rot -->
+									</div>
+								</div>
+								<button>
+									<i id="runAnimation" class="fas fa-sync-alt"></i>
+								</button>
+							</div>
+						</div>
+						
+						<div id="line2Col3" class="col-3">
+							<div class="content">
+								<h4 class="trans-1 trans-drt-600 trans-delay-1400">Fusce mattis arcu non sem hendrerit</h4>
+								<div class="trans-1 trans-drt-600 trans-delay-1600">
+									Sed turpis elit, blandit a bibendum a, pulvinar posuere leo. 
+									Fusce mattis arcu non sem hendrerit.
+									Sed turpis elit, blandit a bibendum a, pulvinar posuere leo. 
+									Fusce mattis arcu non sem hendrerit.
+								</div>
+								<h5 class="trans-1 trans-drt-600 trans-delay-1800">Fusce mattis arcu non sem hendrerit</h5>
+							</div>
+							<div class="after-content" style="display: none;">Sed turpis elit, blandit a bibendum a, pulvinar posuere leo. 
+								Fusce mattis arcu non sem hendrerit.<div class="triangle-LB"></div>
+								<div class="triangle-RT"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ourVision-row-3">
+					<div id="rowSummary" class="row-summary animation-duration-800">
+						<div class="text-large animation-duration-800">				
+							Fusce mattis arcu non sem hendrerit. Fusce mattis arcu non sem hendrerit.
+							Fusce mattis arcu non sem hendrerit. Fusce mattis arcu non sem hendrerit.
+							Fusce mattis arcu non sem hendrerit. Fusce mattis arcu non sem hendrerit.
+							Fusce mattis arcu non sem hendrerit. Fusce mattis arcu non sem hendrerit.
+						</div>
+						<div class="text-small">
+							<h5 class="text-content">Buttom text text text</h5>
+						</div>
+						<!--<div class="triangle-LT"></div>
+						<div class="triangle-RT"></div>
+						<div class="triangle-RB"></div>
+						<div class="triangle-LB"></div>-->
+					</div>
+				</div>
+			</div>
+			<div id="product" class="product-frame">
+				<div class="line-1 animation-duration-1400">
+					<h1>Products<hr></h1>
+				</div>
+				<div class="product-row-1">
+					<div id="products" class="products">
+						<div class="product product-1 animation-duration-1400">
+							<h5>Product 1</h5>
+							<div class="product-picture"><img src="imgs/pcb-layout.jpg"></div>
+							<div class="product-content">
+								<strong>Interdum</strong> et malesuada fames ac ante ipsum primis in faucibus
+								Vivamus consectetur lacinia commodo
+							</div>
+							<a href="#pr1" style="display:none;"></a>
+						</div>
+						<div class="product product-2 animation-duration-1400 animation-delay-300">
+							<h5>Product 2</h5>
+							<div class="product-picture"><img src="imgs/pcb-layout.jpg"></div>
+							<div class="product-content">
+								<strong>Suspendisse</strong> imperdiet ante non ante rhoncus, 
+								consectetur consectetur diam condimentum
+							</div>
+							<a href="#pr2" style="display:none;"></a>
+						</div>
+						<div class="product product-3 animation-duration-1400 animation-delay-600">
+						
+							<h5>Product 3</h5>
+							<div class="product-picture"><img src="imgs/pcb-layout.jpg"></div>
+							<div class="product-content">
+								<strong>Aenean tincidunt</strong>, elit vehicula hendrerit tristique, 
+								nunc ante luctus arcu, at hendrerit nisi lorem sed dolor
+							</div>
+							<a href="#pr3" style="display:none;"></a>
+						</div>
+					</div>
+				</div>
+				<div class="product-row-2">
+					<div id="productSummary" class="row-summary animation-duration-800">
+						<div class="text-large animation-duration-800">		
+							Fusce mattis arcu non sem hendrerit. Fusce mattis arcu non sem hendrerit.
+							Fusce mattis arcu non sem hendrerit. Fusce mattis arcu non sem hendrerit.
+							Fusce mattis arcu non sem hendrerit. Fusce mattis arcu non sem hendrerit.
+							Fusce mattis arcu non sem hendrerit. Fusce mattis arcu non sem hendrerit.
+						</div>
+						<div class="text-small">
+							<h5 class="text-content">Fusce Mattis Arcu</h5>
+						</div>					
+					</div>
+				</div>
+			</div>
+			<div id="categories" class="categories-frame">
+				<div class="line-1 animation-duration-1400">
+					<h1>Categories<hr></h1>
+				</div>
+				<div class="cat-row-1">
+					<div id="catCol1" class="cat-col-1">
+						<h2 class="trans-drt-1400">Fusce mattis</h2>
+						<div class="cat-content trans-drt-1400 trans-delay-400">
+							Curabitur sapien mi, convallis vel interdum gravida, convallis eu nibh. 
+							Donec laoreet vehicula ipsum, vel laoreet enim iaculis vel. 
+							Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+							Aenean a nulla est. Donec sit amet pretium sapien.
+							Morbi mattis consequat justo et aliquam. 
+							Vestibulum interdum velit purus, 
+							nec eleifend nulla accumsan sit amet. Praesent vel cursus ex.
+						</div>
+					</div>
+					<div id="catCol2" class="cat-col-2">
+						<div class="section section-1">
+							<div class="sec-number trans-drt-800"><span class="animation-duration-800 animation-delay-300">1</span></div>
+							<div class="content cont-1 trans-drt-800 trans-delay-500">
+								<h5>Fusce mattis</h5>
+								<div class="cont-text">
+									Fusce mattis arcu non sem hendrerit
+									Sed hendrerit mattis elit eget malesuada
+								</div>
+							</div>
+						</div>
+						<div class="section section-2">
+							<div class="sec-number trans-drt-800 trans-delay-300"><span class="animation-duration-800 animation-delay-600">2</span></div>
+							<div class="content cont-2 trans-drt-800 trans-delay-800">
+								<h5>Sed hendrerit</h5>
+								<div class="cont-text">
+									Fusce mattis arcu non sem hendrerit
+									Sed hendrerit mattis elit eget malesuada
+								</div>
+							</div>
+						</div>
+						<div class="section section-3">
+							<div class="sec-number trans-drt-800 trans-delay-600"><span class="animation-duration-800 animation-delay-900">3</span></div>
+							<div class="content cont-3 trans-drt-800 trans-delay-1100">
+								<h5>Elit eget</h5>
+								<div class="cont-text">
+									Fusce mattis arcu non sem hendrerit
+									Sed hendrerit mattis elit eget malesuada.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="contact" class="contact-frame">
+				<div class="line-1 animation-duration-1400">
+					<h1>Contact<hr></h1>
+				</div>			
+				<div class="contact-row-1">
+					<form class="contact-form" id="form-1" action="#">
+						<div class="field-info">
+							<h4 class="trans-1 trans-drt-800">Type in</h4>
+							<hr class="trans-1 trans-drt-1000">
+						</div>
+
+						<div class="name-frame">
+							<div class="icon trans-drt-800"><i class="fa fa-user"></i></div>
+							<div class="field trans-drt-800">
+								<input name="name" type="text" placeholder="Name">
+							</div>
+						</div>
+
+						<div class="surname-frame">
+							<div class="icon trans-drt-800 trans-delay-200"><i class="fa fa-user"></i></div>
+							<div class="field trans-drt-800 trans-delay-300">
+								<input name="surname" type="text" placeholder="Surname">
+							</div>
+						</div>
+						
+						<div class="email-frame">
+							<div class="icon trans-drt-800 trans-delay-400"><i class="far fa-envelope"></i></div>
+							<div class="field trans-drt-800 trans-delay-500">
+								<input name="email" type="text" placeholder="Email">
+							</div>
+						</div>
+						
+						<div class="phone-frame">
+							<div class="icon trans-drt-800 trans-delay-600"><i class="fa fa-phone"></i></div>
+							<div class="field trans-drt-800 trans-delay-700">
+								<input name="phone" type="text" placeholder="Phone">
+							</div>
+						</div>
+
+						<div class="message-frame">
+							<div class="icon trans-drt-800 trans-delay-800"><i class="fas fa-pencil-alt"></i></div>
+							<div class="field trans-drt-800 trans-delay-900">
+								<input name="message" type="text" placeholder="Message">
+							</div>
+						</div>
+
+						<div class="button-frame">
+							<div class="icon trans-drt-800 trans-delay-1000"></div>
+							<div class="button-msg trans-drt-800 trans-delay-1100">
+								<button class="trans-1 trans-drt-300">Send message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- c-frame -->
+		<!-------------- Footer -------------->
+		<div id="footer" class="footer">
+			<div class="f-row-1">				
+				<div class="col-1 about-us">
+					<h4 class="f-title">About Us</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+						sed do eiusmod tempor incididunt ut</p>
+					<a href="javascript:void(0)" class="trans-1 trans-drt-200">Detail</a>
+				</div>				
+				<div class="col-2 news">
+					<h4 class="f-title">Newsletter</h4>
+					<p>Lorem ipsum dolor sit amet</p>
+					<form class="f-form">
+						<input type="text" placeholder="Email address">
+						<button class="trans-1 trans-drt-200">Sent</button>
+					</form>
+				</div>				
+				<div class="col-3 social">
+					<h4 class="f-title">Follow Us</h4>
+					<p>Connect with Us</p>
+					<div class="social-links">
+						<a href="javascript:void(0)" class="trans-1 trans-drt-200"><i class="fab fa-facebook"></i></a>
+						<a href="javascript:void(0)" class="trans-1 trans-drt-200"><i class="fab fa-twitter-square"></i></a>
+						<a href="javascript:void(0)" class="trans-1 trans-drt-200"><i class="fab fa-linkedin"></i></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="f-row-2">
+				<p class="frame">
+					Copyright &copy 2019 All rights reserved | This template made by
+					<a href="javascript:void(0)" class="footer-link"><i>PetarB</i></a>
+				</p>
+			</div>
+		</div>
+
+<script>
+	
+	//-----------------------------------------
+	// navbar links - HOVER EVENT
+	//-----------------------------------------	
+	const nav_bar = document.getElementById("navBar");
+	
+	for(i=0; i < nav_bar.children.length; i++){ // children - all <a> links
+		nav_bar.children[i].addEventListener("mouseover", hover_in);
+		nav_bar.children[i].addEventListener("mouseout", hover_out);
+	}
+	
+	function hover_in(event){
+		
+		let hr_element = (this).children[0];
+		
+		if(hr_element == undefined || hr_element.tagName == "I"){
+			return;
+		}			
+					
+		if(hr_element.tagName == "HR"){				
+			if (hr_element.className.indexOf("trans-move-on") == -1) {
+				hr_element.className += " trans-move-on";
+			}
+		}		
+	}
+	
+	function hover_out(event){
+		
+		let hr_element = (this).children[0];
+		
+		if(hr_element == undefined || hr_element.tagName == "I"){
+			return;
+		}
+	
+		if (hr_element.className.indexOf("trans-move-on") == 1) {
+			hr_element.className = hr_element.className.replace(" trans-move-on", "");
+		}
+	}
+	
+	//-----------------------------------------
+	// navbar links - CLICK EVENT
+	//-----------------------------------------
+	for(i=0; i < nav_bar.children.length; i++){
+		nav_bar.children[i].addEventListener("click", onclick_event);
+	}
+	
+	function onclick_event(){
+		let link_element = this;
+		let hr_element =  (this).children[0];
+		
+		// if clicked element dont have child OR child is <i> element
+		if(hr_element == undefined || hr_element.tagName == "I"){
+			return;
+		}
+				
+		// click on close buttom - sidebar
+		if(link_element.getAttribute("onclick") != null){
+			return '';
+		}
+	
+		// remove class "active-element"
+		for(i = 0; i < nav_bar.children.length; i++){			
+			// <a> = children[i], <hr> = children[0]
+			if(nav_bar.children[i].children[0].className.indexOf(" active-element") > -1) {
+				nav_bar.children[i].children[0].className = nav_bar.children[i].children[0].className.replace(" active-element", "");
+				nav_bar.children[i].className = nav_bar.children[i].className.replace(" active-element-sidebar", "");
+			}
+			if(nav_bar.children[i].children[0].className.indexOf(" trans-move-on") > -1) {
+				nav_bar.children[i].children[0].className = nav_bar.children[i].children[0].className.replace(" trans-move-on", "");
+			}				
+		}
+	
+		// add "active-element" class on clicked link
+		if (hr_element.className.indexOf("active-element") == -1){
+			hr_element.className += " active-element";
+			link_element.className += " active-element-sidebar";
+		}
+	}
+	
+	//-----------------------------------------
+	// Open and close navbar - Mobile
+	//-----------------------------------------
+	let nav_bar_frame = document.getElementById("navBarFrame");
+	function openNav() {
+		if (nav_bar_frame.className.indexOf("nav-bar-open") == -1) {
+			nav_bar_frame.className += " nav-bar-open";
+		}else if(nav_bar_frame.className.indexOf("nav-bar-open") > -1){
+			nav_bar_frame.className = nav_bar_frame.className.replace(" nav-bar-open", "");
+		}		
+ 	}
+
+	
+	//-----------------------------------------
+	// Scroll page
+	//-----------------------------------------
+	
+	window.onscroll = function(){
+		scroll_response();
+	}
+	
+	const row1_line2 = document.getElementById("row1Line2");
+	const ourVision_row_2 = document.getElementById("ourVisionRow2");
+	const line2_col1 = document.getElementById("line2Col1");
+	const line2_col2 = document.getElementById("line2Col2");
+	const line2_col3 = document.getElementById("line2Col3"); 
+	const row_summary = document.getElementById("rowSummary");
+	const product = document.getElementById("product");
+	const products = document.getElementById("products");
+	const product_summary = document.getElementById("productSummary");
+	const categories = document.getElementById("categories");
+	const cat_col1 = document.getElementById("catCol1");
+	const cat_col2 = document.getElementById("catCol2");
+	const contact = document.getElementById("contact");
+	const form1 = document.getElementById("form-1");
+	
+	// windows size
+	let window_height = window.innerHeight;
+	
+	function scroll_response(){		
+		
+		let top_row1_line2 = row1_line2.getBoundingClientRect().top;
+		let top_ourVision_row_2 = ourVision_row_2.getBoundingClientRect().top; 
+		let top_row_summary = row_summary.getBoundingClientRect().top;
+		let top_product_summary = product_summary.getBoundingClientRect().top;
+		let top_categories = categories.getBoundingClientRect().top;
+		let top_cat_col1 = cat_col1.getBoundingClientRect().top;
+		let top_cat_col2 = cat_col2.getBoundingClientRect().top;
+		let top_product = product.getBoundingClientRect().top;
+		let top_products = products.getBoundingClientRect().top;
+		let top_contact = contact.getBoundingClientRect().top;
+		let top_form1 = form1.getBoundingClientRect().top;
+	
+		if(top_row1_line2 < window_height*2/3){
+			if (row1_line2.children[0].className.indexOf("trans-on-opacity") == -1) {
+				row1_line2.children[0].className += " trans-on-opacity";
+				/* row1_line2.children[1].className += " trans-on-v"; */
+				row1_line2.children[2].className += " trans-on-opacity";
+				
+				row1_line2.children[0].children[0].children[0].className += " trans-on";
+				row1_line2.children[0].children[0].children[1].className += " trans-on";
+				row1_line2.children[0].children[0].children[2].className += " trans-on";
+				row1_line2.children[0].children[1].className += " trans-on-v";
+				
+				row1_line2.children[1].children[0].className += " anm-rot-on";
+				
+				row1_line2.children[2].children[0].className += " trans-on";
+				// row1_line2.children[2].children[1].className += " trans-on";
+				row1_line2.children[2].children[1].className += " anm-rot-on";
+			}
+		}
+		
+		if(top_ourVision_row_2 < window_height*2/3){
+			if(ourVision_row_2.children[0].className.indexOf("animation-zoom") == -1){
+			
+				// title: Research Investments
+				ourVision_row_2.children[0].className += " animation-zoom";
+				
+				// right text
+ 				// console.log(line2_col3.children[0].children[0].className);
+				line2_col3.children[0].children[0].className += " trans-on";
+				line2_col3.children[0].children[1].className += " trans-on";
+				line2_col3.children[0].children[2].className += " trans-on";
+				
+				// picture
+				line2_col1.children[0].children[0].className += " animation-zoom";
+				line2_col1.children[0].children[1].className += " trans-on-pf1";
+				line2_col1.children[0].children[2].className += " trans-on-pf2";
+				line2_col1.children[0].children[3].className += " trans-on-pf3";
+				line2_col1.children[0].children[4].className += " trans-on-pf4";
+				
+				// triangle rotation
+				line2_col2.children[0].className += " trans-on-opacity";
+				
+				setTimeout(() => {
+					// run_animation(); // trigered click on "botton refresh"
+					init_run_animation();
+				}, 1500)
+				
+			}
+		}
+				
+		if(top_row_summary < window_height*3/4){
+			if(row_summary.className.indexOf("anm-bottom-on") == -1){
+				
+				row_summary.className += " anm-bottom-on";
+				
+				setTimeout(function(){
+					row_summary.children[0].className += " animation-text-opacity";
+					
+					row_summary.children[1].className += " anm-box-w anm-shadow-inc";
+					row_summary.children[1].children[0].className += " anm-text-on";
+					
+				}, 800);
+			}
+		}
+		
+		if(top_product < window_height*3/4){
+			if(product.children[0].className.indexOf("animation-zoom") == -1){
+				product.children[0].className += " animation-zoom";
+			}
+		}
+		
+		if(top_products < window_height*3/4){			
+			if(products.children[0].className.indexOf("animation-text-opacity") == -1){			
+				for(i=0; i < products.children.length; i++){
+					products.children[i].classList.add("animation-text-opacity");
+				}
+			}
+		}
+		
+		if(top_product_summary < window_height*3/4){
+			if(product_summary.className.indexOf("anm-bottom-on") == -1){
+				
+				product_summary.className += " anm-bottom-on";
+				
+				setTimeout(function(){
+					product_summary.children[0].className += " animation-text-opacity";
+															
+					product_summary.children[1].className += " anm-box-w anm-shadow-inc";
+					product_summary.children[1].children[0].className += " anm-text-on";					
+				}, 800);
+			}		
+		}
+		
+		if(top_categories < window_height*3/4){
+			if(categories.children[0].className.indexOf("animation-zoom") == -1){
+				categories.children[0].className += " animation-zoom";
+			}
+		}
+		
+		if(top_cat_col1 < window_height*3/4){
+			if(cat_col1.children[0].className.indexOf("trans-rot-0") == -1){
+				cat_col1.children[0].className += " trans-rot-0";
+				cat_col1.children[1].className += " trans-rot-0";
+			}
+		}
+		
+		if(top_cat_col2 < window_height*3/4){		
+			if(cat_col2.children[0].children[0].className.indexOf("trans-on") == -1){
+				setTimeout(function(){
+					for(i = 0; i < cat_col2.children.length; i++){	
+						cat_col2.children[i].children[0].className += " trans-on";
+						cat_col2.children[i].children[0].children[0].className += " animation-text-opacity";
+						
+					}
+					for(i = 0; i < cat_col2.children.length; i++){
+						cat_col2.children[i].children[1].className += " trans-on";
+					}
+				}, 1000);
+			}		
+		}
+		
+		if(top_contact < window_height*3/4){
+			if(contact.children[0].className.indexOf("animation-zoom") == -1){
+				contact.children[0].className += " animation-zoom";
+			}
+		}
+		if(top_form1 < window_height*3/4){
+			if(form1.children[1].children[0].className.indexOf("trans-on") == -1){
+				form1.children[0].children[0].className += " trans-on";
+				form1.children[0].children[1].className += " trans-wLine-on";				
+				for(i = 1; i < form1.children.length; i++){					
+					form1.children[i].children[0].className += " trans-on";
+					form1.children[i].children[1].className += " trans-on";
+				}
+			}
+		}
+	}
+	
+	//-----------------------------------------
+	// Start onload
+	//-----------------------------------------
+	window.onload = function(event){
+		const html = document.querySelector("html");
+		const body = document.querySelector("body");
+		const initInfo = document.getElementById("initInfo");		
+		
+		// srcoll to TOP
+		if(location.hash.indexOf("#") == 0){		
+			window.scrollTo(0, 0);
+		}
+		
+		// disable SCROLL effect on main page
+		html.classList.add("disable-scroll");
+		body.classList.add("disable-scroll");
+	
+		// init info animation
+		if(initInfo.className.indexOf("trans-on-opacity") == -1){
+			initInfo.classList.add("trans-on-opacity");
+		}
+		
+		// triangle animation (Research Investments)
+		create_triangle();
+		
+		// circle background
+		if(screen.width <= 600){
+			circlesBackground(12); // mobile
+		}else{
+			circlesBackground(3); // large screen
+		}
+		
+		// colorized text (Categories)
+		colorizeText();		
+	}	
+		
+	//-------------------------------------------------------
+	// Animation triangle - Research Investments section
+	//-------------------------------------------------------
+	const square_cog = document.getElementById("squareCog"); // square
+	const triangle_cog = document.getElementById("triangleCog"); // triangle
+	const fa_cog = document.getElementsByClassName("fa-cog"); // 3 icons 
+	const run_anm_btn = document.getElementById("runAnimation"); // taster
+	let light = true;
+	
+	function create_triangle(){
+		let r =  (square_cog.clientWidth / 2 ).toPrecision(3); // radius of the circle
+		let a = (r * Math.sqrt(3)).toPrecision(3); // side of the triangle 
+		let h = (3 * r / 2).toPrecision(3); // triangle height
+		let border_right = a / 2;
+		let border_top = h;
+		let border_left = a / 2;
+		let left_pos = (( square_cog.clientWidth - a ) / 2 ) - 1;
+		let fa_cog_width = fa_cog[0].clientWidth;
+		
+		//------------------------------------------------------------
+		// creating a triangle based on the dimensions of the square
+		//------------------------------------------------------------
+		// triangle created by styling the border, height = 0 and width = 0 of the triangle element
+		// height and width are defined by border height and width
+		triangle_cog.style.left = left_pos + "px";
+		triangle_cog.style.borderRight = border_right + "px solid transparent";
+		triangle_cog.style.borderTop = border_top + "px solid #38edf2";
+		triangle_cog.style.borderLeft = border_left + "px solid transparent";
+		
+		//------------------------------------------------------------
+		// positioning icons
+		//------------------------------------------------------------
+		// right icon
+		fa_cog[0].style.right = -fa_cog_width/2 + (r - a/2) + "px";
+		fa_cog[0].style.top = (h - fa_cog_width/2) - 2 + "px";
+		
+		// left icon
+		fa_cog[1].style.left = -fa_cog_width/2 + (r - a/2) + "px";
+		fa_cog[1].style.top = (h - fa_cog_width/2) - 1 + "px";
+		
+		// top icon
+		if(screen.width <= 600){
+			fa_cog[2].style.right = (r - fa_cog_width/2) - 1 + "px";
+		}else{		
+			fa_cog[2].style.right = (r - fa_cog_width/2) - 3 + "px";
+		} 
+		fa_cog[2].style.top = -fa_cog_width/2 + "px";
+		
+		// console.log(fa_cog[0]);
+		// console.log("r: " + r + " a: " + a + " h: " + h );
+		// console.log("width: " + square_cog.clientWidth + " height: " + square_cog.clientHeight);
+	}
+	
+	// toggle animation
+	// 1) run triangle one and continue rotate icons, light is ON 
+	// 2) run triangle one and STOP, turn off icons, light is OFF
+	function run_animation(){	
+		// turn ON taster light 
+		run_anm_btn.parentNode.classList.add("button-shadow");
+		
+		// 1) turn OFF triangle rotate and 3 icons
+		square_cog.children[0].classList.remove("anm-rot-1");
+
+		for(i = 0; i < fa_cog.length; i++){
+			fa_cog[i].classList.remove("anm-rot");
+			fa_cog[i].classList.remove("anm-rot-2"); // infinite animation
+		}
+
+		// 2) turn ON triangle rotate and 3 icon after 100 ms
+		setTimeout(() => {			
+			square_cog.children[0].classList.add("anm-rot-1");
+			for(i = 0; i < fa_cog.length; i++){
+				fa_cog[i].classList.add("anm-rot");
+			}
+		}, 100)
+	}
+	
+	// first time when page load - run animate and take rotate and light ON
+	function init_run_animation(){
+		let fa_cog = document.getElementsByClassName("fa-cog"); // 3 icons 
+		let run_anm_btn = document.getElementById("runAnimation");
+		
+		// rotate - on
+		for(i = 0; i < fa_cog.length; i++){
+			fa_cog[i].classList.add("anm-rot-2");
+		}
+		// light - on
+		run_anm_btn.parentNode.classList.add("button-shadow");
+	}
+	
+	square_cog.children[0].addEventListener("webkitAnimationEnd", circle_rotate_end);	
+	function circle_rotate_end(){
+		// run_anm_btn.parentNode.classList.add("button-shadow");	
+		fa_cog[0].addEventListener("webkitAnimationEnd", function(){
+			// console.log("ENDED fa cog rotate");
+			if( ! light){	
+				// remove previous class
+				for(i = 0; i < fa_cog.length; i++){
+					fa_cog[i].classList.remove("anm-rot");
+				}				
+				// turn ON animate 3 icons 
+				for(i = 0; i < fa_cog.length; i++){
+					fa_cog[i].classList.add("anm-rot-2");
+				}				
+				// light taster
+				run_anm_btn.parentNode.classList.add("button-shadow");				
+			}else{
+					for(i = 0; i < fa_cog.length; i++){
+						fa_cog[i].classList.remove("anm-rot-2");
+						fa_cog[i].classList.remove("anm-rot");
+					}					
+					run_anm_btn.parentNode.classList.remove("button-shadow");
+			}			
+			light = ! light;			
+		});
+	}
+	
+	// click on taster - toggle trianle rotate animation
+	document.addEventListener("click", (event) => {
+		if(event.target.id == "runAnimation"){
+			run_animation();
+		}
+	});
+	
+	//-------------------------------------
+	// Circle background
+	//-------------------------------------
+	function circlesBackground(num){		
+		const cFrame = document.getElementById("cFrame");
+		const cf = document.createElement("div");
+		const circleCover = document.createElement("div");
+		
+		let numC = !isNaN(num) ? num : 1;
+		// console.log("numC: " + numC);
+		
+		circleCover.classList.add("circle-cover");
+		cf.classList.add("cf");
+		cf.appendChild(circleCover);
+		
+		for(let n = 0; n < numC; n++ ){		
+			const circleFrame = document.createElement("div");
+			const circles = [];
+			
+			circleFrame.classList.add("circle-frame");
+			// 18 circles
+			for(let i = 0; i < 18; i++){
+				circles[i] = document.createElement("div");
+				circles[i].classList.add("circle", "circle-" + (i+1));
+				circleFrame.appendChild(circles[i]);
+			}
+			cf.appendChild(circleFrame);
+		}
+		cFrame.insertBefore(cf, cFrame.children[0]);
+	}
+	
+	//-------------------------------------
+	// Product - Hover effect
+	//-------------------------------------	
+	const productElement = document.querySelectorAll(".product");		
+	productElement.forEach(function(el){
+		const hoverFrame = document.createElement("div");
+		const cornerLT = document.createElement("div");
+		const cornerRT = document.createElement("div");
+		const cornerLB = document.createElement("div");
+		const cornerRB = document.createElement("div");
+		const topPart = document.createElement("div");
+		const bottomPart = document.createElement("div");
+		const prLink = document.createElement("a"); // created link element with javascript - product HOVER effect
+ 		const aElement = el.lastElementChild; // EXISTED button link inside HTML
+	
+		if(aElement.tagName == "A"){
+			let hrefV = aElement.getAttribute("href");			
+			
+			prLink.innerHTML = "Detail";
+			
+			if(hrefV != null && hrefV != ""){	
+				prLink.setAttribute("href", hrefV);
+			}else{
+				prLink.setAttribute("href", "#");
+			}	
+		}
+	
+		el.setAttribute("data-name", "product");
+		hoverFrame.classList.add("hover-frame"); // "animation-duration-1000", "animation-text-opacity"
+		cornerLT.classList.add("cor", "corLT", "trans-drt-500");
+		cornerRT.classList.add("cor", "corRT", "trans-drt-500");
+		cornerLB.classList.add("cor", "corLB", "trans-drt-500");
+		cornerRB.classList.add("cor", "corRB", "trans-drt-500");
+		topPart.classList.add("sld", "sld-top", "trans-drt-500");
+		bottomPart.classList.add("sld", "sld-bottom", "trans-drt-500");
+		topPart.setAttribute("data-name", "top");
+		bottomPart.setAttribute("data-name", "bottom");
+		prLink.classList.add("product-link", "trans-drt-800", );
+		
+		bottomPart.appendChild(prLink);
+		// hoverFrame.appendChild(prLink);
+		hoverFrame.appendChild(topPart);
+		hoverFrame.appendChild(bottomPart);
+		hoverFrame.appendChild(cornerLT);
+		hoverFrame.appendChild(cornerRT);
+		hoverFrame.appendChild(cornerLB);
+		hoverFrame.appendChild(cornerRB);
+			
+		// add "hover element" to any single porduct
+		el.appendChild(hoverFrame);
+		
+		el.addEventListener("mouseenter", function(event){
+			// console.log("enter: " + (this).dataset.name);
+			if(hoverFrame.children[0].className.indexOf("sld-center") == -1){
+				for(let i = 0; i < hoverFrame.children.length; i++){
+					if(i == 0){
+						hoverFrame.children[i].classList.add("sld-center");						
+					}	
+					if(i == 1){
+						hoverFrame.children[i].classList.add("sld-center");
+						hoverFrame.children[i].children[0].classList.add("trans-rot-btn");
+					}
+					hoverFrame.children[i].classList.add("cor-turn-on");
+				}
+			}
+		});
+			
+		el.addEventListener("mouseleave", function (event){
+			// console.log("leave: " + (this).dataset.name);	
+			if(hoverFrame.children[0].className.indexOf("sld-center") != -1){				
+				for(let i = 0; i < hoverFrame.children.length; i++){
+					if(i == 0){
+						hoverFrame.children[i].classList.remove("sld-center");
+					}
+					if(i == 1){
+						hoverFrame.children[i].classList.remove("sld-center");
+						hoverFrame.children[i].children[0].classList.remove("trans-rot-btn");
+					}			
+					hoverFrame.children[i].classList.remove("cor-turn-on");
+				}
+			}	
+		});		
+				
+		hoverFrame.children[0].ontransitionend = function(){
+			console.log("ontransitionend");
+		}		
+	});
+	
+	//-------------------------------------
+	// Our Vision - Colore text
+	//-------------------------------------
+	let textContent = cat_col1.children[1].textContent;
+	const textContentArray = textContent.split(" "); // new array consist of single words
+	let r,g,b,n;
+	
+	function colorizeText(){		
+		let textContentOut = "";
+		textContentArray.forEach(function (value, index) {
+			let r = Math.floor(Math.random() * 56);
+			let g = Math.floor(Math.random() * 237);
+			let b = Math.floor(Math.random() * 241);
+			let h = Math.floor(Math.random() * 360); // NOT used
+			let s = Math.floor(Math.random() * 100); // NOT used
+			let lt = Math.floor(Math.random() * 70);
+			lt = lt + 30;
+			
+			// hsl(hue, saturation, lightness)
+			// h, s - fixed value, only lightness (lt) was changed for every word
+			value.trim();
+			if(index == 29) textContentOut += "<br/> ";
+			textContentOut += "<span style=\"color: hsl("+ 200 + ", " + 70 + "%, " + lt + "%)\">" + value + "</span>" + " ";
+		});
+		
+		cat_col1.children[1].innerHTML = " ";
+		cat_col1.children[1].innerHTML = textContentOut;
+	}
+	
+	//-------------------------------------
+	// Init Info
+	//-------------------------------------
+	function initInfo(){
+		let html = document.querySelector("html");
+		let body = document.querySelector("body");
+		let initInfo = document.getElementById("initInfo");
+		initInfo.remove(); // remove cover-info element
+		html.removeAttribute("class");
+		body.removeAttribute("class");
+	}
+</script>		
 </body>
 </html>

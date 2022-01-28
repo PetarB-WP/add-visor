@@ -1,0 +1,80 @@
+//----------------------------
+// before navbar
+//----------------------------
+.before-nav-bar{
+    margin-bottom: 30px;
+	background-color: #333;
+	padding: 0 0 36px 0;
+	
+	display: flex;
+	flex-direction: column;
+	
+	.frame-row-1{
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;
+		height: 48px;
+		width: 100%;
+		font-size: 11px;
+		div{
+			padding: 0 16px;
+			span{
+				color: $logo-color-red;
+			}	
+		}
+	}
+	.frame-row-2{	
+		display: flex;
+		.logo-frame{
+			height: 165px;
+			background-color: #888;
+			flex-wrap: nowrap;		
+			.logo {
+				background-image: url(../imgs/logo_transparent_background.png);
+				background-repeat: no-repeat;
+				background-size: 50%;
+				background-position: center;
+				height: 165px;
+			}
+		}	
+		.social-frame{	
+			display: flex;
+			flex-direction: column;
+			flex: 100%;		
+			.row{
+				display: flex;
+				align-items: center;
+				flex-flow: row-reverse;
+			}
+			.row-1 {
+				font-size: 12px;
+				padding: 0 16px;
+			}			
+			.row-2 {		
+				height: 75px;				
+				a{
+					padding: 0 16px;
+					font-size: 36px;
+					color: $logo-color;					
+				}				
+				a:hover {
+					color: $logo-color-hover;
+				}
+			}
+			.row-3 {
+				height: 50px;
+				a{
+					padding: 0 16px;
+					font-size: 16px;
+					color: white;
+				}
+				a:hover{
+					color: $logo-color;
+				}				
+				a:first-child {
+					font-size: 22px;
+				}
+			}	
+		}	
+	}
+}

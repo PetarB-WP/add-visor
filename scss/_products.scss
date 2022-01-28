@@ -1,0 +1,157 @@
+//----------------------------
+// Products
+//----------------------------
+.product-picture img{
+	width: 100%;
+}
+.product-frame{
+	padding: 16px;
+	background-color: rgba(136,136,136,0.6);
+	position: relative;
+    z-index: 10;
+	
+	.product-row-1{	
+		color: white;
+		padding: 16px;
+		margin-top: 48px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+				
+		.products{
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding: 16px;
+			.product{
+				padding: 16px;
+				width: 32%;
+				position: relative;	
+				opacity: 0.0;
+				.product-content{
+					border-bottom: 2px solid $logo-color;
+					padding: 48px 16px 16px 0;					
+					strong{
+						color: $logo-color;
+					}
+				}
+			}
+		}
+	}
+	
+	// Product Summary
+	.product-row-2{
+		color: white;
+		padding: 64px 32px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+		.row-summary{
+			.text-small{
+				background-color: #919191 !important;
+			}
+		}		
+	}
+}
+
+//---------------------------------------------------
+// Hover:	corners on product element 
+//---------------------------------------------------
+.hover-frame{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.cor{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	opacity: 0;
+}
+// corners animation
+.cor-turn-on{
+	opacity: 1.0;
+	transform: translate(0, 0) !important;
+}
+.corLT{
+	left: 0;
+    top: 0;
+    border-top: 3px solid $logo-color;
+    border-left: 3px solid $logo-color;
+	transform: translate(-20px, -20px);
+}
+.corRT{
+	right: 0;
+    top: 0;
+    border-top: 3px solid $logo-color;
+    border-right: 3px solid $logo-color;
+	transform: translate(20px, -20px);
+}
+.corLB{
+	bottom: 0;
+    left: 0;
+    border-left: 3px solid $logo-color;
+    border-bottom: 3px solid $logo-color;
+	transform: translate(-20px, 20px);
+}
+.corRB{
+	right: 0;
+    bottom: 0;
+    border-bottom: 3px solid $logo-color;
+    border-right: 3px solid $logo-color;
+	transform: translate(20px, 20px);
+}
+
+//---------------------------------------------------
+// Hover:	top and bottom cover on product element 
+//---------------------------------------------------
+.sld{
+	position: absolute;
+	height: 0;
+	width: 100%;
+	opacity: 0;
+}
+.sld-top{
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0, 0.8);
+}
+.sld-bottom{
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0, 0.8);
+	perspective: 350px;
+	
+	// button taster
+	.product-link{
+		border: 1px solid $logo-color;
+		border-radius: 3px;
+		position: absolute;
+		top: -20px;
+		left: 0;
+		width: 130px;
+		color: white;
+		cursor: pointer;
+		padding: 10px;
+		text-align: center;
+		text-decoration: none;
+		letter-spacing: 3px;		
+		transform: rotateY(0deg) translateX(0);
+	}
+}
+
+// slider top and bottom animation
+.sld-center{
+	height: 50%;
+	opacity: 1.0;
+}
+// button animation
+.trans-rot-btn{
+	transform: rotateY(360deg) translateX(-50%) !important; 
+	left: 50% !important;
+}

@@ -1,0 +1,317 @@
+//-------- ourVision --------
+.ourVision-frame{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 10;
+	width: 100%;
+    background-color: rgba(136,136,136,0.6);
+    margin-top: 20px;
+	padding: 16px;
+}
+.ourVision-row-1, .ourVision-row-2, .ourVision-row-3{
+	display: flex;
+}
+.opacity-ourVision{
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.ourVision-row-1, .ourVision-row-2{
+	display: flex;
+	flex-direction: column;
+	padding: 16px; 
+	margin-top: 16px;
+	color: white;
+	font-size: 18px;
+	
+	.line-2{
+		display: flex;
+		padding: 16px;
+		margin-top: 48px;
+		color: $logo-color-hover;
+		font-size: 16px;
+		position: relative;
+		
+		.column-ourVision{
+			border-radius: 10px;
+			display: flex;
+		}
+		
+		.column-1{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			flex: 43%;
+			padding: 32px;
+			background-color: black;
+			text-align: center;
+			opacity: 0.0;
+			height: 300px;
+			position: relative;
+			
+			.row-1{
+			    display: flex;
+				justify-content: space-around;
+				align-items: center;
+
+				i{
+					opacity: 0.0;
+				}
+			}
+			.row-2{
+				font-size: 12px;
+				text-align: initial;
+				transform: translateY(25%);
+				opacity: 0.0;
+			}
+			
+		}
+		.column-2{
+			padding: 32px;
+			font-size: 56px;
+			color: $logo-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 14%;
+			i{
+				transform: scale(0);
+			}
+		}
+		.column-3{
+			background-color: $logo-color;
+			font-size: 18px;
+			color: white;
+			display: flex;
+			align-items: center;
+			flex: 43%;
+			opacity: 0.0;
+			position: relative;
+			
+			.text-3{
+				transform: translateX(25%);
+				color: #333;
+				opacity: 0.0;
+				font-size: 15px;
+				strong{
+					color: #333;
+				}
+			}
+			
+			i{
+				position: absolute;
+				font-size: 56px;
+				right: 32px;
+				bottom: 32px;
+				color: black;
+				transform: scale(0);
+			}
+		}
+	}
+}
+
+@keyframes rot-check{
+	0%{ transform: rotateZ(0deg) scale(0); }
+	25%{transform: rotateZ(360deg) scale(0.2); }
+	50%{transform: rotateZ(720deg) scale(0.4); }
+	75%{transform: rotateZ(1080deg) scale(0.6); }
+	100%{transform: rotateZ(1440deg) scale(1.0); }
+}
+.anm-rot-on{	
+	animation-name: rot-check;
+	/* animation-duration: 600ms; */ 
+	/* animation-delay: 1400ms; */
+	/* animation-iteration-count: 1; */
+	animation-fill-mode: forwards;
+	animation-timing-function: linear; 
+}
+
+
+//-------- ourVision-row-2 --------
+.triangle-LT {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid $logo-color; /* 75px */
+}
+
+.triangle-RT{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 0;
+	width: 0;
+	border-right: 25px solid $logo-color; /* 75px */
+	border-bottom: 25px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.triangle-RB {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    border-right: 25px solid $logo-color; /* 75px */
+    border-top: 25px solid transparent;
+    border-left: 25px solid transparent;
+}
+
+.triangle-LB{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 0;
+	width: 0;
+	border-right: 25px solid transparent; /* 75px */
+	border-bottom: 25px solid $logo-color;
+	border-top: 25px solid transparent;
+}
+
+.ourVision-row-2{	
+	.line-2 .col-1{
+		display: flex;
+		flex-direction: column;
+		flex: 43%;
+		
+		.picture-frame{
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.picture{
+			padding: 16px;
+			width: 100%;
+			background-image: url(../imgs/board-electrical.png);
+			background-repeat: no-repeat;
+			background-size: 70%;
+			background-position: center;
+			height: 100%;						
+			position: absolute;
+			top: 0;
+			right: 0;			
+			transform: scale(0);
+			animation-fill-mode: forwards;
+		}
+		
+		.p-anm{
+			border: 2px solid transparent;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+		.p-anm-1{
+			// border-top: 5px solid #38edf2;
+			top: -30px;
+			left: 0;
+			transform: skewY(-4deg);
+		}
+		.p-anm-2{
+			// border-right: 5px solid #38edf2;
+			right: -10px;
+			top: 0;
+			transform: skewX(5deg);
+		}
+		.p-anm-3{
+			// border-bottom: 5px solid #38edf2;
+			right: 0;
+			bottom: -25px;
+			transform: skewY(-4deg);
+		}
+		.p-anm-4{
+			// border-left: 5px solid #38edf2;
+			top: 0;
+			left: -15px;
+			transform: skewX(5deg);
+		}
+		
+		.after-picture{
+			border-top: 5px solid $logo-color;
+			border-bottom: 5px solid $logo-color;
+			font-size: 16px;
+			font-size: 16px;
+			width: 100%;
+			padding: 32px 32px;
+			position: relative;
+		}
+	}
+	
+	// triangle animation
+	.line-2 .col-2{
+		display: flex;
+		flex: 14%;
+		justify-content: center;
+		align-items: center;
+		padding: 48px;		
+		.frame-cog{		
+			border: 1px solid black;
+			height: 180px;
+			.circle-cog{
+				border: 1px solid black;
+				border-radius: 50%;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	} 
+	.line-2 .col-3{
+		padding: 16px;	
+		display: flex;
+		flex: 43%;
+		flex-direction: column;
+		
+		.content{
+			padding: 16px;
+			color: white;
+			font-size: 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			h4{
+				margin-bottom: 32px;
+				color: $logo-color;
+				transform: translateX(-17%);
+				animation-fill-mode: forwards;
+				opacity: 0.0;
+			}
+			div{
+				transform: translateX(-20%);
+				animation-fill-mode: forwards;
+				opacity: 0.0;
+			}
+			h5{
+				margin: 32px 0 0 0;
+				padding: 16px;
+				color: $logo-color;
+				background-color: #444;
+				font-style: italic;
+				transform: translateX(-23%);
+				animation-fill-mode: forwards;
+				opacity: 0.0;
+			}
+		}
+		.after-content{
+			border-top: 5px solid $logo-color;
+			border-bottom: 5px solid $logo-color;
+			padding: 32px;
+			width: 100%;
+			font-size: 16px;
+			position: relative;
+		}
+	}	
+	
+}
+
+.ourVision-row-3{
+	padding: 64px 32px;
+}

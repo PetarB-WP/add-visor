@@ -1,0 +1,150 @@
+
+//---------------------------
+// Row Summary
+//---------------------------
+.row-summary{
+	border: 2px solid $logo-color;
+	border-radius: 25px;
+	padding: 48px 32px;
+	width: 100%;
+	color: white;		
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	opacity: 0;
+	
+	.text-large{
+		opacity: 0;
+	}
+	.text-small{
+		border-radius: 25px;
+		background-color: #919191;
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		width: 0%;
+		padding: 0;
+		position: absolute;
+		bottom: -32px;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		.text-content{
+			color: white;
+			margin: 0;
+			text-align: center;
+			opacity: 1.0;
+			height: 0;
+			padding: 0;
+			transform: scale(0);			
+			transition: transform 800ms linear 1000ms, padding 800ms linear 1000ms, height 800ms linear 0ms;
+		}
+	}
+	.text-small:before{
+		border: 1px solid transparent;
+		border-radius: 5px;
+		content: "";
+		position: absolute;
+		display: block;
+		left: 0;
+		bottom: 0;
+		height: 100%;
+		width: 0;
+		background-color: rgba(56,237,242,0.0);
+	}
+	.text-small:after{
+		border: 1px solid transparent;
+		border-radius: 5px;
+		content: "";
+		position: absolute;
+		display: block;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		width: 0;
+		background-color: rgba(56,237,242,0.0);
+	}		
+}
+
+//-----------------------------------
+// Animation of a small text cover
+//----------------------------------- 
+
+//------------------------
+// text small - content
+//------------------------
+.anm-text-on{
+	transform: scale(1) !important;
+	padding: 15px 0 !important;
+	height: 60px !important;
+}
+
+//-------------------------- 
+// text small box
+//--------------------------
+@keyframes boxW{
+	0%{ width: 0%;}
+	100%{ width: 25%;}	
+}
+.anm-box-w{
+	animation-name: boxW;
+	animation-duration: 800ms;
+	animation-direction: normal;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;	
+	animation-fill-mode: forwards;
+	animation-delay: 850ms;
+}
+
+//---------------------------------
+// left and right shadows effects 
+//---------------------------------
+.anm-shadow-inc:before, 
+.anm-shadow-inc:after{
+	animation-name: shadowInc;
+	// animation-duration: 800ms;
+	animation-duration: 2500ms;
+	animation-direction: normal;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;	
+	animation-fill-mode: forwards;
+}
+@keyframes shadowInc{
+	0%{box-shadow: 
+		0px 0px 0px 0px rgb(56,237,242,0.6), 
+		0 0 0px 0px rgba(56,237,242,0.4), 
+		0 0 0px 0px rgba(56,237,242,0.2), 
+		0 0 0px 0px rgba(56,237,242,0.2);
+		background-color: rgba(56,237,242,1.0);
+		height: 100%;
+		bottom: 0;
+	}	
+	30%{box-shadow: 
+		0px 0px 1px 5px rgb(56,237,242,0.6), 
+		0 0 1px 10px rgba(56,237,242,0.4), 
+		0 0 1px 15px rgba(56,237,242,0.2), 
+		0 0 5px 18px rgba(56,237,242,0.2);
+		background-color: rgba(56,237,242,1.0);
+		height: 100%;
+		bottom: 0;
+	}
+	90%{box-shadow: 
+		0px 0px 1px 5px rgb(56,237,242,0.6), 
+		0 0 1px 10px rgba(56,237,242,0.4), 
+		0 0 1px 15px rgba(56,237,242,0.2), 
+		0 0 5px 18px rgba(56,237,242,0.2);
+		background-color: rgba(56,237,242,1.0);
+		height: 100%;
+		bottom: 0;
+	}
+	100%{box-shadow: 
+		0px 0px 1px 5px rgb(56,237,242,0.6), 
+		0 0 1px 10px rgba(56,237,242,0.4), 
+		0 0 1px 15px rgba(56,237,242,0.2), 
+		0 0 5px 18px rgba(56,237,242,0.2);
+		background-color: rgba(56,237,242,1.0);
+		height: 20%;
+		bottom: 25px;
+	}
+}
