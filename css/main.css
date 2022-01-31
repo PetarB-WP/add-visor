@@ -362,7 +362,6 @@
     bottom: 25px;
   }
 }
-/*------ background circles -----*/
 .c-frame {
   margin: 0;
   padding: 0;
@@ -1199,20 +1198,6 @@
   width: 30%;
   transform: translateX(200px);
   opacity: 0;
-  /*
-  ::-webkit-internal-autofill-selected{
-  	background-color: transparent !important;
-  	color: darkorange !important; 
-  }
-
-  :-ms-internal-autofill-selected{
-  	background-color: transparent !important;
-  	color: darkorange !important; 
-  }
-  ::-internal-autofill-selected{
-  	background-color: transparent !important;
-  	color: darkorange !important; 
-  }*/
 }
 .contact-row-1 .contact-form > div .field input {
   border: none;

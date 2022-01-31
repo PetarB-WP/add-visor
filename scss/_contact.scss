@@ -1,5 +1,5 @@
 //---------------------------
-//Contact
+// Contact
 //---------------------------
 .contact-frame{
 	position: relative;
@@ -15,8 +15,7 @@
 	.contact-form {
 		display: flex;
 		flex-direction: column;
-		width: 100%;
-		
+		width: 100%;		
 		.field-info{
 			margin: 0;
 			padding: 32px;
@@ -115,22 +114,8 @@
 				// -webkit-box-shadow: none;
 				//transition: background-color 5000s ease-in-out 0s;
 			}
-			/*
-			::-webkit-internal-autofill-selected{
-				background-color: transparent !important;
-				color: darkorange !important; 
-			}
-			
-			:-ms-internal-autofill-selected{
-				background-color: transparent !important;
-				color: darkorange !important; 
-			}
-			::-internal-autofill-selected{
-				background-color: transparent !important;
-				color: darkorange !important; 
-			}*/
 		}
-	} // contact-form > div
+	}
 } // contact-row-1
 
 .trans-wLine-on{
